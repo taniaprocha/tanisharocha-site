@@ -1,0 +1,39 @@
+.root {
+  display: block;
+  width: 100%;
+  height: 900px;
+  padding-top: 20px;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+
+  background: linear-gradient(
+    180deg,
+    #dfbac9,
+    #eec5b7,
+    #ffcebe,
+    #ffe3c0,
+    #ffe9f0,
+    #dfbac9
+  );
+  background-size: 400% 400%;
+
+  box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.65);
+
+  animation: colorchange 80s ease infinite;
+}
+
+@keyframes colorchange {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}

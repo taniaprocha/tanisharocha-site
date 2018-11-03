@@ -1,0 +1,8 @@
+.root {
+}
+
+.line {
+  width: 2px;
+  height: 200px;
+  background-color: red;
+}
