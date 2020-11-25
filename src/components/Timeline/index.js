@@ -1,13 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types"
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
 import StarIcon from "@material-ui/icons/Star";
-
+import Img from "gatsby-image/withIEPolyfill"
 import 'react-vertical-timeline-component/style.min.css';
+
+import withQuery from "./withQuery"
 import "./index.css";
 
-const Timeline = () => {
+const Timeline = ({data}) => {
     return (
       <VerticalTimeline>
         <VerticalTimelineElement
@@ -15,13 +18,13 @@ const Timeline = () => {
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="December 2018 to present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">Software developer</h3>
           <h4 className="vertical-timeline-element-subtitle">Aurora digital</h4>
           <p>
-          Frontend developer, sometimes full-stack
+            Frontend developer, sometimes full-stack
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -80,8 +83,8 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="April 2008 to February 2013"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<WorkIcon />}
+          iconClassName='mobbit-icon'
+          icon={<Img alt="one" fluid={data.mobbit.image.fluid} />}
         >
           <h3 className="vertical-timeline-element-title">Multimedia developer</h3>
           <h4 className="vertical-timeline-element-subtitle">Mobbit Systems</h4>
@@ -106,4 +109,14 @@ const Timeline = () => {
     );
 }
 
-export default Timeline;
+Timeline.propTypes = {
+  data: PropTypes.shape({
+    mobbit: PropTypes.shape({
+      image: PropTypes.shape({
+        fluid: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+}
+
+export default withQuery(Timeline);

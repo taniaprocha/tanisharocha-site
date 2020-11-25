@@ -7,3 +7,17 @@
 .vertical-timeline-element-subtitle{
   margin-top: 20px;
 }
+
+.mobbit-icon{
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+}
+
+.mobbit-icon .gatsby-image-wrapper{
+  width: 100%;
+}
+
