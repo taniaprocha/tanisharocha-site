@@ -8,7 +8,14 @@
   margin-top: 20px;
 }
 
-.mobbit-icon{
+
+.muzzley-icon,
+.mobbit-icon,
+.buu-icon,
+.coupzon-icon,
+.oncostats-icon,
+.aurora-icon,
+.ipvc-icon{
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -18,6 +25,20 @@
 }
 
 .mobbit-icon .gatsby-image-wrapper{
+  width: 90%;
+}
+
+.muzzley-icon .gatsby-image-wrapper{
+  width: 80%;
+}
+
+.coupzon-icon .gatsby-image-wrapper,
+.buu-icon .gatsby-image-wrapper,
+.aurora-icon .gatsby-image-wrapper,
+.ipvc-icon .gatsby-image-wrapper{
   width: 100%;
 }
 
+.oncostats-icon .gatsby-image-wrapper{
+  width: 70%;
+}
