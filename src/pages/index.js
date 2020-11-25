@@ -1,15 +1,24 @@
 import React from "react";
-import Link from "gatsby-link";
+import Timeline from '../components/Timeline';
+import Helmet from 'react-helmet';
 
-import Layout from "../components/Layout";
+import './index.css'
 
-/*
-<h1>Hi people</h1>
-<p>Welcome to your new Gatsby site.</p>
-<p>Now go build something great.</p>
-<Link to="/page-2/">Go to page 2</Link>
-*/
+const IndexPage = () => {
 
-const IndexPage = () => <Layout />;
+  return(
+    <div>
+      <Helmet>
+        <title>Tanisharocha webite</title>
+        <meta name="description" content="This is my website" />
+        <meta name="keywords" content="" />
+      </Helmet>
+      <div className='root'>
+        Tânia Rocha
+        <Timeline />
+      </div>
+    </div>
+  );
+};
 
 export default IndexPage;

@@ -1,8 +1,9 @@
-.root {
+
+
+.vertical-timeline-element-title{
+
 }
 
-.line {
-  width: 2px;
-  height: 200px;
-  background-color: red;
+.vertical-timeline-element-subtitle{
+  margin-top: 20px;
 }
