@@ -7,9 +7,6 @@ var plugins = [{
     },{
       plugin: require('/Users/taniarocha/Documents/taniarocha/personal/tanisharocha-site/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
-    },{
-      plugin: require('/Users/taniarocha/Documents/taniarocha/personal/tanisharocha-site/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
-      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
