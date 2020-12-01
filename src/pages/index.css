@@ -1,4 +1,33 @@
-.root{
+.root {
   height: 100%;
-  background-color: pink;
+
+  background: linear-gradient(
+    180deg,
+    #dfbac9,
+    #eec5b7,
+    #ffcebe,
+    #ffe3c0,
+    #ffe9f0,
+    #dfbac9
+  );
+
+  background-size: 400% 400%;
+
+  box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.65);
+
+  font-family: "Josefin Sans", sans-serif;
+
+  animation: colorchange 80s ease infinite;
+}
+
+@keyframes colorchange {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 51% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }

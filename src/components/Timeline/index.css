@@ -1,13 +1,19 @@
-
-
-.vertical-timeline-element-title{
-
+.vertical-timeline-element-title {
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.vertical-timeline-element-subtitle{
+.vertical-timeline-element-subtitle {
   margin-top: 20px;
+
+  font-size: 14px;
+  font-weight: 400;
 }
 
+.vertical-timeline-element-body {
+  font-size: 12px;
+  font-weight: 400;
+}
 
 .muzzley-icon,
 .mobbit-icon,
@@ -15,30 +21,30 @@
 .coupzon-icon,
 .oncostats-icon,
 .aurora-icon,
-.ipvc-icon{
+.ipvc-icon {
   display: flex;
-  overflow: hidden;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
 
   background-color: white;
 }
 
-.mobbit-icon .gatsby-image-wrapper{
+.mobbit-icon .gatsby-image-wrapper {
   width: 90%;
 }
 
-.muzzley-icon .gatsby-image-wrapper{
+.muzzley-icon .gatsby-image-wrapper {
   width: 80%;
 }
 
 .coupzon-icon .gatsby-image-wrapper,
 .buu-icon .gatsby-image-wrapper,
 .aurora-icon .gatsby-image-wrapper,
-.ipvc-icon .gatsby-image-wrapper{
+.ipvc-icon .gatsby-image-wrapper {
   width: 100%;
 }
 
-.oncostats-icon .gatsby-image-wrapper{
+.oncostats-icon .gatsby-image-wrapper {
   width: 70%;
 }
